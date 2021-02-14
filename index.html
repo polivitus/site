@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Letter Animation</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+ <script src="/js/parallax.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script>
+$(function() {
+// ParallaxJS
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene, {
+selector: '.layer' });
+// Particle JS
+particlesJS("snowfall", {
+"particles": {
+"number": {
+"value": 200 },
+"shape": {
+"type": "circle" },
+"size": {
+"value": 2,
+"random": true },
+"line_linked": {
+"enable": false },
+"move": {
+"enable": true,
+"speed": 10,
+"direction": "bottom",
+"straight": true } },
+"interactivity": {
+"detect_on": "canvas",
+"events": {
+"onhover": {
+"enable": false } },
+"modes": {
+"push": {
+"particles_nb": 2 } } } });
+});
+</script> 
+</head>
+
+<body>
+  <div id="scene" class="container">
+<img src="/img/fore-3-min.png" data-depth="0.2" class="layer fore-pic-back" style="position: absolute;">
+<img class="layer fore-pic-mid" src="/img/fore-2-min.png" data-depth="0.3" style="position: absolute;background-size: cover;background-attachement: fixed;display: none;">
+<img class="layer fore-pic" src="/img/fore-min.png" data-depth="0.4" style="position: absolute;background-size: cover;background-attachement: fixed; display: none;">
+</div>
+<div id="snowfall" data-depth="0.6" class="layer"></div>
+  <h3 class="fixed">Click the letters!</h3>
+<div class="word">
+	<span>P</span>
+	<span>O</span>
+	<span>L</span>
+	<span>I</span>
+	<span>V</span>
+	<span>I</span>
+	<span>T</span>
+</div>
+<div class="image"><img src="images/ya.jpg">
+</div>
+
+
+<footer>
+	<p>Created with <i class="fa fa-heart"></i> by Polivit MOSCOW 2020</a></p>
+</footer>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
